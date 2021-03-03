@@ -11,12 +11,3 @@ self.addEventListener('message', event => {
   console.log(`The client sent me a message: ${event.data}`)
   event.source.postMessage("Hi client")
 })
-
-self.addEventListener('sync', function (event) {
-  console.log(`Sync event: ${event.tag}`)
-})
-
-self.addEventListener('sync', function (event) {
-  console.log('>>> SYNC', event)
-  self.registration.showNotification("Sync event fired!");
-})

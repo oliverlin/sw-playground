@@ -17,6 +17,5 @@ if (navigator.serviceWorker) {
     navigator.serviceWorker.ready.then(function (registration ) {
       registration.active.postMessage("Hi service worker")
     })
-
   })
 }
